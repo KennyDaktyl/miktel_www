@@ -1,0 +1,914 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+section.firstpage {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+div.wrap {
+    overflow: hidden;
+}
+
+
+/*TŁO NOWA HUTA SIEDZIBA*/
+div.tlo {
+    /* position: absolute; */
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url('img/Nowa+Huta+Siedziba+Miktel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    opacity: .85;
+}
+
+div.mleko {
+    display: block;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .6s;
+    z-index: 0;
+}
+
+header.logo {
+    position: absolute;
+    top: 4%;
+    bottom: 90vh;
+    left: 7%;
+    right: 7%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo div {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 10vw;
+    width: 12vh;
+    height: 12vh;
+}
+
+div.logogsm {
+    background-image: url('img/logoGSM.jpg');
+    background-position-y: 50%;
+}
+
+div.logograw {
+    background-image: url('img/logo+Miktel+Grawer.png');
+}
+
+p.oferta {
+    position: absolute;
+    top: 18vh;
+    bottom: 77vh;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    /* background-color: red; */
+}
+
+
+
+/*NAWIGACJA GŁOWNA*/
+div.menuicon {
+    position: absolute;
+    top: 35vh;
+    bottom: 75vh;
+    right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.menuicon i {
+    display: none;
+    font-size: 45px;
+    padding: 2% 8%;
+    cursor: pointer;
+}
+
+nav.nawigacja {
+    display: flex;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: black;
+    transition: .7s;
+    z-index: 3;
+}
+
+.nawigacja h1 {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5% 15%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    /* border: 1px solid blue; */
+}
+
+.nawigacja h2 {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5% 15%;
+    letter-spacing: 1px;
+    font-weight: 600;
+    /* border: 1px solid blue; */
+}
+
+.ofertapromo h2 {
+    color: #885334;
+}
+
+.nawigacja li {
+    list-style: none;
+}
+
+.firstpage a {
+    color: white;
+    text-decoration: none;
+}
+
+.nawigacja ul {
+    line-height: 4vh;
+    /* border: 1px solid blue; */
+}
+
+.nawigacja h1:hover {
+    color: #E9C6A8;
+}
+
+
+
+
+/*SEKCJA SKLEPU*/
+
+section.firstpage {
+    overflow: hidden;
+}
+
+div.sklep {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 45%;
+    bottom: 25%;
+    z-index: 2;
+}
+
+.sklep h1 {
+    text-align: center;
+    /* font-size: 16px; */
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+
+
+.firstpage h2 {
+    font-size: 21px;
+}
+
+.sklep div {
+    position: relative;
+    height: 11vh;
+    line-height: 11vh;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2%;
+
+}
+
+.sklep p {
+    font-size: 22px;
+    line-height: 11vh;
+}
+
+.sklep a {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    font-size: 20px;
+    line-height: 15vh;
+    /* padding: 2% 2%; */
+}
+
+.sklep i:hover {
+    cursor: pointer;
+}
+
+
+.social a:hover {
+    cursor: pointer;
+}
+
+
+
+/*SKLEPY STACJONARNE*/
+
+section.sklepystac {
+    position: absolute;
+    top: 80%;
+    bottom: 5%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sklepystac h2 {
+    text-align: center;
+    width: 100%;
+    line-height: 4vh;
+    font-size: 14px;
+}
+
+p.nazwa {
+    font-size: 25px;
+}
+
+.sklepystac p {
+    line-height: 3vh;
+    font-size: 12px;
+    height: 25px;
+
+}
+
+
+.sklepystac div {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+
+
+@media (orientation:landscape) {
+    p.oferta {
+        font-size: 15px;
+    }
+
+    .menuicon i {
+        font-size: 30px;
+    }
+
+    .sklep h1 {
+        font-size: 16px;
+    }
+
+    .sklep p {
+        font-size: 20px;
+    }
+
+    div.sklep {
+        top: 38%;
+    }
+
+    section.sklepystac {
+        top: 77%;
+        bottom: 8%;
+    }
+
+}
+
+
+
+/*SEKCJA AKTYWNEJ NAWIGACJI*/
+
+section.secendpage.active {
+    display: none;
+}
+
+section.blogowo.active {
+    display: none
+}
+
+section.danetele.active {
+    display: none
+}
+
+i.active {
+    display: block;
+}
+
+nav.active {
+    left: 0;
+}
+
+div.active {
+    opacity: .7;
+}
+
+div.sklep.active {
+    z-index: 1;
+}
+
+div.mleko.active {
+    z-index: 1;
+}
+
+
+
+/*SEKCJA DRUGASTRONA*/
+
+section.secendpage {
+    background-color: black;
+    color: white;
+    width: 100%;
+    /* height: 50vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-top: 5%;
+}
+
+
+.secendpage article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+    min-height: 570px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+section.thirdpage {
+    background-color: white;
+    color: black;
+}
+
+
+.thirdpage article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+
+.secendpage h1 {
+    min-width: 110px;
+    height: 12vh;
+    line-height: 12vh;
+    font-size: 22px;
+    /* text-align: center; */
+    border-bottom: 1px solid rgba(238, 124, 17, 0.986);
+}
+
+.secendpage p {
+    min-height: 280px;
+    font-size: 15px;
+    padding: 25px 5px;
+    width: 100%;
+}
+
+
+
+.dlugie h2 {
+    height: 10vh;
+    min-height: 56px;
+    font-size: 20px;
+    line-height: 5vh;
+}
+
+
+.secendpage div {
+    width: 85%;
+    height: 15vh;
+    /* line-height: 100%; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position-x: calc(50% - 50%); */
+    /* transform: scale(.9); */
+}
+
+.secendpage span {
+    height: 10vh;
+    line-height: 10vh;
+    width: 100%;
+}
+
+.secendpage a {
+    text-align: center;
+    color: rgba(238, 124, 17, 0.986);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: 2px solid rgba(238, 124, 17, 0.986);
+    border-radius: 15px 15px 15px 15px;
+    /* background-color: coral; */
+}
+
+.secendpage img {
+    width: 100%;
+    height: 100%;
+}
+
+/* div.foto1 {
+    background-image: url('img/Telefon+Apple+Iphone.jpg');
+}
+
+div.foto2 {
+    background-image: url('img/akcesoria+telefonu.jpg');
+}
+
+div.foto3 {
+    background-image: url('img/serwis+naprawy+gsm.jpg');
+}
+
+div.foto4 {
+    background-image: url('img/pieczatki.jpg');
+}
+
+div.foto5 {
+    background-image: url('img/grawerowane+certyfikaty.jpg');
+}
+
+div.foto6 {
+    background-image: url('img/klucze.jpg');
+}
+
+div.foto7 {
+    background-image: url('img/immo.jpg');
+} */
+
+
+
+/*SEKCJA BLOGA*/
+
+section.blogowo {
+    position: relative;
+    color: #D3B48F;
+    background-color: black;
+}
+
+div.bcg {
+    width: 100%;
+    height: 45vh;
+    background-image: url('img/plac+centralny+widok.jpg');
+    background-position: center;
+    background-size: cover;
+    /* opacity: .8; */
+}
+
+article.blog {
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    /* width: 100%; */
+    /* padding: 5% 0; */
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    /* width: 100%; */
+    /* padding: 5% 0; */
+}
+
+.blog header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    justify-content: space-between;
+    align-content: center;
+}
+
+.blogowo h2 {
+    font-size: 25px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 5% 0; */
+}
+
+.blog div {
+    width: 33%;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.blogowo a {
+    color: white;
+    text-decoration: none;
+}
+
+div.social {
+    position: absolute;
+    top: 70%;
+    bottom: 2%;
+    width: 100%;
+    /* margin-top: 15px; */
+    /* padding: 12px; */
+}
+
+.social i {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.social i {
+    border-radius: 20%;
+}
+
+.face i {
+    background-color: blue;
+    border-radius: 20%;
+}
+
+.google i {
+    background-color: red;
+
+}
+
+.youtube i {
+    color: red;
+    background-color: white;
+}
+
+div.like {
+    display: flex;
+    width: 100%;
+}
+
+div.fb-like {
+    width: 50%;
+}
+
+
+
+@media (orientation:landscape) {
+    div.bcg {
+        height: 80vh;
+    }
+
+    .blog div {
+        width: 33%;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    div.social {
+        width: 100%;
+        margin-top: 2px;
+        padding: 12px;
+        top: 60%;
+    }
+
+    div.like {
+        width: 100%;
+    }
+
+    div.fb-like {
+        width: 50%;
+    }
+
+}
+
+/*Kontakt z nami*/
+
+section.danetele {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.danetele div {
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+
+}
+
+.danetele strong {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+div.nh {
+    width: 100%;
+}
+
+.danetele p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.danetele div p:nth-child(2) {
+    min-height: 100px;
+}
+
+.danetele a {
+    color: white;
+    text-decoration: none;
+}
+
+div.mapy {
+    color: #D3B48F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.mapy span {
+    width: 50%;
+    font-size: 25px;
+    padding: 15px;
+}
+
+iframe {
+    width: 80%;
+    /* padding-bottom: 20px; */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media (orientation:portrait) and (max-width:320px) {
+    .firstpage h1 {
+        font-size: 18px;
+        top: 15%;
+        /* height: 80px; */
+    }
+
+    nav.nawigacja {
+        width: 65vw;
+        height: 90vh;
+        top: 5vh;
+        bottom: 5vh;
+    }
+
+    .nawigacja h1 {
+        font-size: 15px;
+        padding: 15px 5px;
+    }
+
+    .nawigacja ul {
+        line-height: 3vh;
+    }
+
+    h2.motto {
+        min-height: 55vh;
+    }
+
+    h2.motto2 {
+        min-height: 60vh;
+    }
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+    .secendpage article {
+        min-height: 570px;
+    }
+}
+
+
+@media (orientation:landscape) {
+
+    nav.nawigacja {
+        width: 47vw;
+        height: 90vh;
+        top: 5vh;
+        bottom: 5vh;
+    }
+
+    .nawigacja h1 {
+        padding: 8px 5%;
+    }
+
+    .nawigacja ul {
+        line-height: 2vh;
+    }
+
+    .secendpage article {
+        width: 30%;
+        /* height: 135vh; */
+        padding-top: 0px;
+    }
+
+    .thirdpage article {
+        width: 40%;
+    }
+
+    header.dlugie {
+        height: 20vh;
+
+    }
+
+    .dlugie h1 {
+        height: 15vh;
+        line-height: 7vh;
+    }
+
+
+    .secendpage h2 {
+        font-size: 15px;
+        padding: 25px 5px;
+        width: 100%;
+        /* height: 70vh; */
+    }
+
+    h2.motto {
+        min-height: 0vh;
+    }
+
+    /*
+    h2.motto3 {
+        height: 50vh;
+    }
+
+    h2.motto4 {
+        height: 65vh;
+    }
+
+    h2.motto5 {
+        height: 85vh;
+    }
+
+    h2.motto6 {
+        height: 47vh;
+    }
+
+    h2.motto7 {
+        height: 47vh;
+    } */
+
+
+    .secendpage div {
+        height: 30vh;
+    }
+
+    .secendpage img {
+        height: 30vh;
+    }
+
+    .secendpage span {
+        height: 15vh;
+        padding-top: 5%;
+    }
+
+    .secendpage a {
+        text-align: center;
+        color: rgba(238, 124, 17, 0.986);
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 15px;
+        border: 2px solid rgba(238, 124, 17, 0.986);
+        border-radius: 15px 15px 15px 15px;
+        /* background-color: coral; */
+    }
+
+
+}
+
+@media (orientation:landscape) and (max-height:320px) {
+
+    h1.oferta {
+        top: 25vh;
+        border-bottom: 0 solid white;
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+    h1.oferta {
+        top: 18vh;
+        bottom: 75vh;
+        left: 15vw;
+        right: 15vw;
+    }
+
+    div.sklep {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    div.menuicon {
+        right: 20vw;
+    }
+
+    .sklep h1 {
+        margin: 0 auto;
+        max-width: 1024px;
+
+    }
+
+
+    .secendpage article {
+        width: 33%;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+
+    .thirdpage article {
+        width: 40%;
+    }
+
+    .dlugie h1 {
+        height: 12vh;
+        line-height: 12vh;
+    }
+
+    .thirdpage article {
+        margin-bottom: 120px;
+    }
+
+    article.blog {
+        bottom: 40%;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .blogowo p {
+        font-size: 38px;
+    }
+
+    .blog div {
+        font-size: 28px;
+    }
+
+    .blog h2 {
+        font-size: 50px;
+    }
+
+    .blog p {
+        font-size: 28px;
+    }
+
+    div.bcg {
+        height: 100vh;
+    }
+
+    .blog header {
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    div.social {
+        top: 100%;
+    }
+
+    section.danetele {
+        padding-top: 30px;
+    }
+
+    .danetele strong {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+}

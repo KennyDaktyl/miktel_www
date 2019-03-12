@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #CCAB84;
+    height: 300vh;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+section.tytul {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    clear: both;
+    user-select: none;
+}
+
+div.logohome {
+    /* display: flex; */
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    align-content: center;
+    /* flex-basis: 50%; */
+    padding: 5px 10px;
+}
+
+@media (orientation:landscape) {
+    section.tytul {
+        padding-top: 2px;
+
+    }
+
+    div.logohome {
+        flex-basis: 50%;
+    }
+}
+
+.tytul a:nth-child(1) {
+    font-size: 10px;
+    float: left;
+}
+
+.tytul a:nth-child(2) {
+    font-size: 10px;
+    float: right;
+}
+
+
+.tytul i {
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    border: 2px solid #CCAB84;
+    border-radius: 50%;
+}
+
+.tytul h1 {
+    line-height: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .tytul h2 {
+
+    width: 20%;
+    font-size: 18px;
+} */
+
+
+section.lewa {
+    margin: 0 auto 8px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.lewa a {
+    font-size: 15px;
+}
+
+.lewa h2 {
+    width: 33.3%;
+    border: 1px solid #CCAB84;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+h2>a {
+    width: 100%;
+    text-align: center;
+}
+
+.h2 a {
+    line-height: 1000px;
+}
+
+a {
+    color: #CCAB84;
+}
+
+h2.skup {
+    width: 100%;
+    border-bottom: 2px solid #CCAB84;
+}
+
+
+
+
+@media (orientation:landscape) {
+    .lewa h2 {
+        width: 12%;
+        border: 0;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    h2.skup {
+        width: 20%;
+        /* border-bottom: 2px solid #CCAB84; */
+    }
+
+}
+
+section.main {
+    /* margin-top: 180px; */
+    /* padding-top: 20px; */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+
+p {
+    padding: 5px 5px;
+    font-size: 11px;
+    width: 100%;
+}
+
+div.motto {
+    margin-top: 15px;
+    width: 90%;
+}
+
+.main h2 {
+    font-size: 16px;
+}
+
+
+p.oferta1 {
+    margin: 0 auto;
+    width: 40%;
+    padding: 5px 15px;
+    border: 1px solid #CCAB84;
+    border-radius: 10px;
+}
+
+div.none {
+    display: none;
+}
+
+article.of1 {
+    display: none;
+}
+
+article.of1.active {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+@media (orientation:landscape) {
+    article.of1.active {
+        width: 100%;
+    }
+
+    p.oferta1 {
+        width: 40%;
+
+    }
+
+}
+
+div.produkt {
+    display: flex;
+    margin: 15px auto;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+    align-content: space-between;
+    width: 170px;
+    border: 1px solid #CCAB84;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.produkt h1 {
+    align-self: center;
+    text-align: center;
+    margin: 5px auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+div.fotoP {
+    margin: 15px auto;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+}
+
+.fotoP img {
+    width: 150px;
+    height: 113px;
+}
+
+.none img {
+    width: 0px;
+    height: 0px;
+}
+
+div.infoP {
+    min-height: 120px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.produkt p {
+    font-size: 15px;
+}
+
+p.oferta1 {
+    cursor: pointer;
+}
+
+.infoP p:nth-child(1) {
+    font-weight: 700;
+    height: 40px;
+}
+
+div.nasklep {
+    width: 100%;
+    height: 30px;
+}
+
+.produkt a {
+    margin: 0 auto;
+}
+
+@media (orientation:landscape) {
+    div.nasklep {
+        /* width: 50%; */
+        height: 30px;
+    }
+}
+
+
+
+.nasklep a {
+    cursor: pointer;
+}
+
+
+.lewa h1 {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.lewa h1:hover {
+    cursor: pointer;
+}
+
+
+div.slogan {
+    width: 100%;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+
+div.img {
+    width: 18%;
+    max-width: 100px;
+    background: white;
+    align-self: center;
+}
+
+.img img {
+    width: 100%;
+    margin: auto;
+}
