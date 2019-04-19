@@ -417,8 +417,8 @@ div.mleko.active {
     }
 
     img.sklepowe {
-        width: 100%;
-        height: 200px;
+        width: 180px;
+        height: 150px;
         padding: 15px;
         border-radius: 20%;
     }
@@ -808,11 +808,38 @@ div.mleko.active {
     /*SEKCJA KLUCZY NUMERYCZNYCH*/
 
     section.opis_sekcji {
-        margin: 210px auto 40px auto;
+        margin: 80px auto 40px auto;
         text-align: center;
         width: 100%;
         max-width: 1024px;
     }
+
+    section.numeric2 {
+        margin: 50px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .numeric2 h1 {
+        padding: 25px;
+        font-size: 30px;
+    }
+
+    .numeric2 p {
+        line-height: 28px;
+        font-size: 23px;
+    }
+
+    .numeric2 li section.numeric {
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px auto 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 
     .opis_sekcji h1 {
         padding: 20px;
@@ -820,7 +847,7 @@ div.mleko.active {
 
     .opis_sekcji p {
         line-height: 28px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     section.numeric {
@@ -830,6 +857,11 @@ div.mleko.active {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .numeric div {
+        margin: 0 auto;
+        text-align: center;
     }
 
     p.opis {
@@ -849,11 +881,11 @@ div.mleko.active {
     }
 
     .cennik h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .cennik p {
-        font-size: 25px;
+        font-size: 22px;
         padding: 10px;
     }
 }
@@ -884,13 +916,61 @@ div.mleko.active {
         justify-content: space-between;
     }
 
+
+
     .numeric div {
         width: 100%;
-        /* margin: 20px; */
+        margin: 20px auto;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .numeric img {
+        width: 300px;
+        /* height: 200px; */
+    }
+
+    section.numeric2 {
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .numeric2 p {
+        margin: 5px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .numeric2 li {
+        margin: 5px auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .numeric2 h1 {
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .numeric2 div {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numeric2 img {
+        width: 300px;
+        height: 200px;
+        margin: 10px auto;
     }
 
     section.opis_sekcji {
@@ -907,6 +987,9 @@ div.mleko.active {
     .opis_sekcji p {
         line-height: 28px;
         font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .numeric img {
@@ -965,6 +1048,22 @@ div.mleko.active {
         font-size: 18px;
     }
 
+    section.numeric2 {
+        margin: 20px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .numeric2 h1 {
+        padding: 20px;
+    }
+
+    .numeric2 p {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
     section.numeric {
         width: 100%;
         max-width: 1024px;
@@ -972,6 +1071,10 @@ div.mleko.active {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    section.numeric2 {
+        margin: 20 auto;
     }
 
     p.opis {
@@ -999,16 +1102,136 @@ div.mleko.active {
         font-size: 25px;
         padding: 10px;
     }
+
+    section.opis_sekcji {
+        margin: 110px auto 0px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .opis_sekcji h1 {
+        padding: 20px;
+    }
+
+    .opis_sekcji p {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    section.numeric {
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+    .numeric div {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numeric img {
+        width: 300px;
+        /* height: 200px; */
+    }
+
+    section.numeric2 {
+        width: 100%;
+        max-width: 1024px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .numeric2 p {
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .numeric2 h1 {
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .numeric2 div {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .numeric2 img {
+        width: 300px;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .numeric2 p {
+        font-size: 20px;
+    }
+
+    section.opis_sekcji {
+        margin: 110px auto 40px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 1024px;
+    }
+
+    .opis_sekcji h1 {
+        padding: 20px;
+    }
+
+    .opis_sekcji p {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    .numeric img {
+        /* width: 40%; */
+        height: 50px;
+        padding: 30px;
+    }
+
+    div.cennik {
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .cennik h1 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .cennik p {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+    }
 }
 
 p.opis {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
+    width: 100%;
+    margin: 15px auto;
 }
 
 .numeric img {
-    /* width: 40%; */
+    width: 300px;
     height: 250px;
     padding: 30px;
 }
