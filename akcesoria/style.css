@@ -8,7 +8,7 @@
 body {
     background-color: black;
     color: #CCAB84;
-    height: 300vh;
+    /* height: 300vh; */
     /* overflow: hidden; */
 }
 
@@ -27,8 +27,10 @@ section.tytul {
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
+    height: 100px;
+    /* overflow: hidden; */
     background-color: black;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -37,13 +39,10 @@ section.tytul {
 }
 
 div.logohome {
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    /* height: px; */
-    display: inline;
     justify-content: center;
     align-content: center;
-    /* flex-basis: 50%; */
     padding: 2px 10px;
 }
 
@@ -61,7 +60,7 @@ div.logohome {
     line-height: 50px;
 }
 
-.tytul i {
+.logohome i {
     font-size: 15px;
     padding: 10px;
     color: white;
@@ -78,37 +77,51 @@ a {
 }
 
 
-@media (orientation:landscape) {
-    /* 
-    div.logohome {
-        display: flex;
-        height: 15vh;
-        line-height: 15vh;
-        justify-content: center;
-        align-content: center;
-        flex-basis: 50%;
-        padding: 0;
-    }
+div.menuicon {
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 100%;
+    /* transform: translateX(-50%); */
+    background-color: black;
+    /* clear: both; */
+}
 
 
-    .tytul i {
-        font-size: 13px;
-        padding: 10px;
-        color: white;
-        border: 2px solid #CCAB84;
-        border-radius: 50%;
-    } */
+.menuicon i {
+    display: none;
+    font-size: 25px;
+    padding: 10px;
+    /* border: 2px solid #CCAB84; */
+    /* border-radius: 50%; */
 
 }
 
+i.active {
+    display: block;
+    float: right;
+    padding-right: 15px;
+}
 
 
 section.lewa {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     align-content: flex-end;
+    background-color: rgb(34, 31, 31);
+    width: 100%;
+    padding-bottom: 10px;
+
+    position: fixed;
+    top: 105px;
+    left: -100%;
+    transition: .4s;
+}
+
+section.lewa.active {
+    left: 0;
 }
 
 .lewa a {
@@ -129,37 +142,19 @@ section.lewa {
 
 
 a {
-    color: #CCAB84
+    color: #CCAB84;
 }
 
 
-@media (orientation:landscape) {
 
-    section.lewa {
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        /* align-content: flex-end; */
-    }
-
-    .lewa h2 {
-        width: 20%;
-        margin: 0 auto;
-        justify-content: center;
-        align-content: center;
-        font-size: 10px;
-        border: 0;
-    }
-}
 
 section.main {
-    /* margin-top: 222px; */
+    margin-top: 222px;
     text-align: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 }
 
@@ -181,14 +176,6 @@ div.motto {
 }
 
 
-p.oferta1 {
-    margin: 0 auto;
-    width: 40%;
-    padding: 5px 15px;
-    border: 1px solid #CCAB84;
-    border-radius: 10px;
-}
-
 div.none {
     display: none;
 }
@@ -202,9 +189,8 @@ article.of1.active {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
-
 }
 
 div.produkt {
@@ -213,7 +199,7 @@ div.produkt {
     padding: 5px 10px;
     flex-wrap: wrap;
     justify-content: first baseline;
-    align-content: space-between;
+    align-content: center;
     width: 170px;
     border: 1px solid #CCAB84;
     border-radius: 10px;
@@ -260,8 +246,12 @@ div.infoP {
     min-height: 63px;
 }
 
-
 p.oferta1 {
+    margin: 0 auto;
+    width: 150px;
+    padding: 5px 15px;
+    border: 1px solid #CCAB84;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -302,4 +292,33 @@ div.img {
 .img img {
     width: 100%;
     margin: auto;
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+
+    section.lewa {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-content: flex-end; */
+    }
+
+    .lewa h2 {
+        width: 20%;
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+        font-size: 28px;
+        border: 0;
+    }
+
+    .lewa h2:hover {
+        border-bottom: 1px solid #CCAB84;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
 }

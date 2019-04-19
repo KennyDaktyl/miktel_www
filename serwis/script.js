@@ -37,6 +37,8 @@ open.addEventListener("click", function () {
     of6.classList.remove("active")
     of7.classList.remove("active")
     of8.classList.remove("active")
+
+
 })
 
 close.addEventListener("click", function () {
@@ -182,4 +184,59 @@ nav8.addEventListener("click", function () {
     of6.classList.remove("active")
     of7.classList.remove("active")
     of8.classList.add("active")
+})
+
+
+
+
+var a = $('.navi').height() + $('.gora').height();
+$('.front').css('margin-top', a);
+
+
+$('.lcd').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of1').offset().top - a
+    })
+})
+
+$('.dotyk').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of2').offset().top - a
+    })
+})
+
+$('.złącza').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of3').offset().top - a
+    })
+})
+
+$('.zalane').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of4').offset().top - a
+    })
+})
+
+$('.android').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of5').offset().top - a
+    })
+})
+
+$('.buzzer').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of6').offset().top - a
+    })
+})
+
+$('.microfon').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of7').offset().top - a
+    })
+})
+
+$('.data').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.of8').offset().top - a
+    })
 })

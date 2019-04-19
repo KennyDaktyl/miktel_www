@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 25px;
+}
+
+ul.kategorie {
+    display: flex;
+    justify-content: space-around;
+    /* align-content: center; */
+}
+
+.kategorie li {
+    margin: 10px auto;
+    width: 20%;
+}
+
+ul.podkategorie {
+    display: none;
+}
+
+ul.podkategorie.active {
+    display: block;
+}
+
+/* li:hover>ul {
+    display: block;
+} */
+
+.podkategorie li {
+    width: 100%;
+}
+
+.kat:hover {
+    font-weight: 700;
+}
+
+.podkategorie li {
+    font-weight: 400;
+}
+
+.podkategorie li:hover {
+    color: red;
+}

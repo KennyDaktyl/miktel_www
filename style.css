@@ -3,16 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 
+body {
+    background-color: black;
+    z-index: -3;
+}
 
 section.firstpage {
     background-color: black;
-    width: 100vw;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
     height: 100vh;
     position: relative;
     color: white;
+    /* display: flex; */
 }
 
 div.wrap {
@@ -49,22 +57,23 @@ div.mleko {
 
 header.logo {
     position: absolute;
-    top: 4%;
-    bottom: 90vh;
-    left: 7%;
-    right: 7%;
-    padding-top: 5%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
 .logo div {
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 0 10vw;
-    width: 12vh;
-    height: 12vh;
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
 }
 
 div.logogsm {
@@ -79,10 +88,13 @@ div.logograw {
 p.oferta {
     position: absolute;
     top: 18vh;
-    bottom: 77vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* bottom: 77vh; */
     width: 100%;
+    max-width: 1024px;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
     border-bottom: 2px solid white;
@@ -94,9 +106,13 @@ p.oferta {
 /*NAWIGACJA GŁOWNA*/
 div.menuicon {
     position: absolute;
-    top: 35vh;
-    bottom: 75vh;
-    right: 10vw;
+    /* width: 100%; */
+    margin: 0 auto;
+    max-width: 1024px;
+    top: 30vh;
+    /* bottom: 75vh; */
+    right: 0;
+    left: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +122,9 @@ div.menuicon {
 .menuicon i {
     display: none;
     font-size: 45px;
-    padding: 2% 8%;
+    /* margin-left: 80%; */
+    padding: 10px 18px;
+    /* float: right; */
     cursor: pointer;
 }
 
@@ -173,6 +191,7 @@ nav.nawigacja {
 
 section.firstpage {
     overflow: hidden;
+    max-width: 1024px;
 }
 
 div.sklep {
@@ -345,6 +364,8 @@ section.secendpage {
     background-color: black;
     color: white;
     width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
     /* height: 50vh; */
     display: flex;
     flex-wrap: wrap;
@@ -370,6 +391,7 @@ section.secendpage {
 section.thirdpage {
     background-color: white;
     color: black;
+    max-width: 1024px;
 }
 
 
@@ -476,6 +498,8 @@ section.blogowo {
     position: relative;
     color: #D3B48F;
     background-color: black;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 div.bcg {
@@ -484,20 +508,16 @@ div.bcg {
     background-image: url('img/plac+centralny+widok.jpg');
     background-position: center;
     background-size: cover;
-    /* opacity: .8; */
+    opacity: .5;
 }
 
 article.blog {
     position: absolute;
     top: 5%;
     bottom: 5%;
-    /* width: 100%; */
-    /* padding: 5% 0; */
     left: 5%;
     right: 5%;
     text-align: center;
-    /* width: 100%; */
-    /* padding: 5% 0; */
 }
 
 .blog header {
@@ -511,6 +531,7 @@ article.blog {
 
 .blogowo h2 {
     font-size: 25px;
+    /* color: black; */
     width: 100%;
     margin: 0 auto;
     /* padding: 5% 0; */
@@ -524,7 +545,7 @@ article.blog {
 }
 
 .blogowo a {
-    color: white;
+    color: #D3B48F;
     text-decoration: none;
 }
 
@@ -612,6 +633,8 @@ section.danetele {
     color: white;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 
@@ -674,6 +697,8 @@ iframe {
 footer {
     text-align: center;
     padding: 20px;
+    margin: 10px;
+    background-color: white;
 }
 
 
@@ -721,7 +746,7 @@ footer {
 
     nav.nawigacja {
         width: 47vw;
-        height: 90vh;
+        /* height: 90vh; */
         top: 5vh;
         bottom: 5vh;
     }
@@ -825,11 +850,40 @@ footer {
 }
 
 @media (orientation:landscape) and (min-width:1024px) {
+
+    p {
+        font-size: 25px;
+    }
+
     h1.oferta {
         top: 18vh;
         bottom: 75vh;
         left: 15vw;
         right: 15vw;
+    }
+
+    p.oferta {
+        font-size: 25px;
+    }
+
+    .sklepgsm p {
+        font-size: 25px;
+    }
+
+    .sklepgraw p {
+        font-size: 25px;
+    }
+
+    .secendpage h2 {
+        font-size: 30px;
+    }
+
+    .secendpage p {
+        font-size: 25px;
+    }
+
+    .sklep h1 {
+        font-size: 25px;
     }
 
     div.sklep {
@@ -838,7 +892,12 @@ footer {
     }
 
     div.menuicon {
-        right: 20vw;
+        right: 20px;
+    }
+
+    nav.nawigacja {
+        width: 30vw;
+
     }
 
     .sklep h1 {
@@ -911,4 +970,8 @@ footer {
         padding-bottom: 30px;
     }
 
+    .danetele p {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
 }

@@ -8,7 +8,7 @@
 body {
     background-color: black;
     color: #CCAB84;
-    height: 101vh;
+    /* height: 101vh; */
     /* width: 100vw; */
     /* overflow: hidden; */
 }
@@ -126,29 +126,15 @@ ul {
     cursor: pointer;
 }
 
-
-article.front.active {
-    position: absolute;
-    top: 40vh;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    transition: .6s;
-    z-index: -1;
-}
-
-article.front.none {
-    display: none;
-}
-
 article.front {
-    position: absolute;
-    top: 130px;
-    left: 0;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     transition: .6s;
-    z-index: -1;
+    justify-content: center;
+    align-content: center;
+    margin: 130 auto;
+    /* z-index: -1; */
 }
 
 .front h1 {
@@ -184,21 +170,23 @@ article.front {
 .front a {
     color: #CCAB84;
     text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-article.of {
+/* article.of {
     display: none;
     top: 120px;
     width: 85%;
     margin: 120px auto;
     text-align: center;
+} */
 
-}
-
-article.of.active {
+article.of {
     display: block;
     margin: 120px auto;
     text-align: center;
+    width: 85%;
 }
 
 .of h2 {

@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #CCAB84;
+    /* height: 300vh; */
+    /* overflow: hidden; */
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+div.logograwera {
+    width: 33.3%;
+}
+
+img.logoGraw {
+    width: 75px;
+    height: 75px;
+    margin: 8px 15px;
+}
+
+div.tytul {
+    display: inline-block;
+    /* height: 75px; */
+    line-height: 95px;
+    font-size: 25px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.tytul p {
+    line-height: 95px;
+    font-size: 25px;
+}
+
+div.menuicon {
+    display: inline-block;
+    width: 33.3%;
+    line-height: 100%;
+    font-size: 35px;
+
+}
+
+.menuicon i {
+    display: none;
+}
+
+i.active {
+    display: block;
+    margin: 8px 15px;
+    /* padding: 5px 5px; */
+    line-height: 95px;
+    float: right;
+}
+
+
+section.lewa {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: rgb(34, 31, 31);
+    width: 100%;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 105px;
+    left: -100%;
+    transition: .4s;
+}
+
+section.lewa.active {
+    left: 0;
+}
+
+.lewa a {
+    font-size: 15px;
+    /* line-height: 250px; */
+}
+
+.lewa h2 {
+    width: 33.3%;
+    border: 1px solid #CCAB84;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+a {
+    color: #CCAB84;
+    cursor: pointer;
+}
+
+article.glowny {
+    width: 95%;
+    text-align: center;
+    margin: 150px auto;
+    transition: .4s;
+}
+
+div.fotoglowne {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.fotoglowne img {
+    width: 150px;
+}
+
+p.zobacz {
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+section.kontakt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.kontakt p.tytul {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.kontakt p {
+    font-size: 15px;
+}
+
+.kontakt img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+p.telefon {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+main {
+    display: none;
+}
+
+main.active {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.of p.notready {
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+
+article.of {
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: center;
+    align-content: center;
+    width: 160px;
+    border: 1px solid #CCAB84;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+
+.of h1 {
+    align-self: center;
+    text-align: center;
+    margin: 5px auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+section.images {
+    margin: 5px auto;
+    /* align-items: center; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    /* height: 160px; */
+}
+
+.fotoP img {
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    /* height: 113px; */
+}
+
+div.minifoto {
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center; */
+    width: 40%;
+    padding: 5px 10px;
+}
+
+.minifoto img {
+    width: 45px;
+    height: 45px;
+}
+
+
+.none img {
+    width: 0px;
+    height: 0px;
+}
+
+section.infoP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 120px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.of p {
+    font-size: 9px;
+    text-align: center;
+    font-weight: 700;
+}
+
+p.topic {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+}
+
+p.cena {
+    font-size: 17px;
+    /* border-bottom: 1px solid; */
+}
+
+.of p:nth-child(1) {
+    padding-bottom: 5px;
+}
+
+
+aside.producent {
+    display: flex;
+    /* width: 100px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.producent p {
+    width: 40%;
+}
+
+.producent img {
+    width: 40%;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+div.kolryObu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* height: 30px; */
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    margin: 8px auto;
+}
+
+.kolryObu p:nth-child(1) {
+    width: 100%;
+}
+
+.kolryObu div {
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+div.black {
+    background-color: black;
+}
+
+div.blue {
+    background-color: blue;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.green {
+    background-color: green;
+}
+
+div.yellow {
+    background-color: yellow;
+}
+
+div.pink {
+    background-color: pink;
+}
+
+div.grey {
+    background-color: grey;
+}
+
+div.white {
+    background-color: white;
+}
+
+div.orange {
+    background-color: orange;
+}
+
+
+div.nasklep {
+    /* width: 100%; */
+    /* height: 130px; */
+    /* line-height: 30px; */
+    align-self: center;
+}
+
+.nasklep a {
+    cursor: pointer;
+    margin: auto;
+    line-height: 30px;
+}
+
+
+@media (orientation:landscape) {
+
+    article.of {
+        width: 95%;
+        margin: 8px auto;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    p.nazwa {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    section.images {
+        width: 15%;
+        text-align: center;
+        margin: auto;
+    }
+
+    div.fotoP {
+        margin: 0 auto;
+    }
+
+    .fotoP img {
+        width: 70px;
+        height: 70px;
+        text-align: center;
+    }
+
+    div.minifoto {
+        width: 45%;
+        margin: 2px auto;
+        padding: 5px;
+        /* flex-wrap: wrap; */
+    }
+
+    .minifoto img {
+        width: 35px;
+        height: 35px;
+        margin: 0 auto;
+    }
+
+
+    aside.producent {
+        display: flex;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    section.infoP {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-content: center;
+        margin: 2px;
+        padding: 5px;
+    }
+
+    div.infocenowe {
+        width: 20%;
+        margin: 0;
+    }
+
+    div.kolryObu {
+        display: flex;
+        width: 20%;
+        height: 70px;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: white;
+        margin: auto 0;
+    }
+
+    div.kolryOdbicia {
+        display: flex;
+        width: 20%;
+        height: 30px;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: white;
+        margin: 0;
+    }
+
+    .kolryObu div {
+        /* width: 20%; */
+        /* height: 15px; */
+        align-self: center;
+    }
+
+    div.nasklep {
+        width: 15%;
+        margin: auto 0;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+
+    body {
+        height: 101vh;
+        max-width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.logo {
+        width: 1024px;
+        /* transform: translateX(50%); */
+    }
+
+    .tytul p {
+        font-size: 35px;
+        /* color: red; */
+    }
+
+    section.lewa.active {
+        width: 1024px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .lewa h2 {
+        font-size: 20px;
+    }
+
+
+    article.glowny {
+        width: 95%;
+        text-align: center;
+        /* margin: 0 auto; */
+        transition: .4s;
+    }
+
+    div.fotoglowne {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .fotoglowne img {
+        width: 250px;
+    }
+
+    .glowny p {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    p.zobacz {
+        margin: 15px auto;
+        font-size: 35px;
+    }
+
+    section.kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .kontakt p.tytul {
+        width: 100%;
+        font-size: 55px;
+        font-weight: 700;
+        margin: 10px auto;
+    }
+
+    .kontakt p {
+        font-size: 25px;
+        padding: 8px;
+    }
+
+    .kontakt img {
+        width: 320px;
+        margin: 10px 0;
+    }
+
+    p.telefon {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+
+    article.of {
+        width: 1024px;
+        margin: 8px auto;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    p.nazwa {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    section.images {
+        width: 15%;
+        text-align: center;
+        margin: auto;
+    }
+
+    div.fotoP {
+        margin: 0 auto;
+    }
+
+    .fotoP img {
+        width: 170px;
+        height: 170px;
+        text-align: center;
+    }
+
+    div.minifoto {
+        width: 45%;
+        margin: 2px auto;
+        padding: 5px;
+        /* flex-wrap: wrap; */
+    }
+
+    .minifoto img {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+    }
+
+
+    aside.producent {
+        display: flex;
+        width: 250px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    section.infoP {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-content: center;
+        margin: 2px;
+        padding: 5px;
+    }
+
+    div.infocenowe {
+        width: 20%;
+        margin: 0;
+    }
+
+    div.kolryObu {
+        display: flex;
+        width: 20%;
+        height: 70px;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: white;
+        margin: auto 0;
+    }
+
+    div.kolryOdbicia {
+        display: flex;
+        width: 20%;
+        height: 30px;
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: white;
+        margin: 0;
+    }
+
+    .kolryObu div {
+        /* width: 20%; */
+        /* height: 15px; */
+        align-self: center;
+    }
+
+    div.nasklep {
+        width: 15%;
+        margin: auto 0;
+    }
+
+    .nasklep {
+        font-size: 25px;
+    }
+
+    .of p {
+        font-size: 19px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    p.nazwa {
+        font-size: 28px;
+        font-weight: 700;
+        padding: 4px 10px;
+    }
+
+    p.cena {
+        font-size: 27px;
+        /* border-bottom: 1px solid; */
+    }
+
+}
