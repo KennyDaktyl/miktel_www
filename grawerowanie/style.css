@@ -69,7 +69,11 @@ div.tytul {
 }
 
 .tytul b {
-    font-size: 28px;
+    font-size: 20px;
+}
+
+.tytul a {
+    font-size: 18px;
 }
 
 div.menuicon {
@@ -87,7 +91,7 @@ div.menuicon {
     transform: translate(-50%, -50%);
 }
 
-i.active {
+i.menuicon.active {
     display: block;
 }
 
@@ -474,7 +478,6 @@ p.menuMale.active {
 .menuMale i:hover {
     font-size: 14px;
     font-weight: 500;
-
 }
 
 i.tab.active {
@@ -1012,7 +1015,7 @@ div.nasklep {
     body {
         height: 101vh;
         max-width: 1024px;
-        margin: 0 auto;
+        margin: -120px auto;
         text-align: center;
     }
 
@@ -1215,5 +1218,90 @@ div.nasklep {
         font-size: 27px;
         /* border-bottom: 1px solid; */
     }
+
+}
+
+@media (min-width:1024px) {
+
+    .subMenu h1 {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .subMenu h1:hover {
+        width: 350px;
+        border-bottom: 1px solid;
+    }
+
+    .menuKat h1 {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .menuKat h1:hover {
+        font-style: italic;
+    }
+
+    article.glowny {
+        margin: 310px auto;
+
+    }
+
+    .menuMale i {
+        font-size: 20px;
+        height: 50px;
+        width: 12%;
+    }
+
+    .menuMale i:hover {
+        font-size: 18px;
+        font-style: inherit;
+
+    }
+
+    .menuMale2 i {
+        font-size: 20px;
+        height: 50px;
+        width: 12%;
+    }
+
+    .menuMale2 i:hover {
+        font-size: 18px;
+        font-style: inherit;
+
+    }
+
+    .menuMale3 i {
+        font-size: 20px;
+        height: 50px;
+        width: 12%;
+    }
+
+    .menuMale3 i:hover {
+        font-size: 18px;
+        font-style: inherit;
+
+    }
+
+    .menuMale4 i {
+        font-size: 20px;
+        height: 50px;
+        width: 12%;
+    }
+
+    .menuMale4 i:hover {
+        font-size: 18px;
+        font-style: inherit;
+    }
+
+    .glowny p {
+        font-size: 28px;
+    }
+
+    .glowny li {
+        font-size: 24px;
+    }
+
+
 
 }

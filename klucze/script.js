@@ -3,6 +3,11 @@ const close = document.querySelector(".fa-window-close");
 const menu = document.querySelector(".navi");
 const mleko = document.querySelector(".mleko");
 const kontakt = document.querySelector(".kontakt");
+const menuS1 = document.querySelector(".item_1");
+const menuS2 = document.querySelector(".item_2");
+const menuS3 = document.querySelector(".item_3");
+const menuS4 = document.querySelector(".item_4");
+
 
 // var a = $('.navi').height() + 20;
 
@@ -33,6 +38,33 @@ $('.kontakt').on('click', function () {
         scrollTop: $('.danetele').offset().top
     })
 })
+
+$('.item1').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.item_1').offset().top - 200
+    })
+})
+
+$('.item2').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.item_2').offset().top - 250
+    })
+})
+
+$('.item3').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.item_3').offset().top - 250
+    })
+})
+
+$('.item4').on('click', function () {
+    $('body,html').animate({
+        scrollTop: $('.item_4').offset().top - 250
+    })
+})
+
+
+
 
 const slideList = [{
         img: "img/klucze+mieszkaniowe+duzy+wybor.jpg",
